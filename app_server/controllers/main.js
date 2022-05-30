@@ -1,6 +1,7 @@
+
 const fs = require('fs');
 
-const blogs = JSON.parse(fs.readFileSync('./data/blogs.json', 'utf8'));
+const blogs = JSON.parse(fs.readFileSync('./data/blogs.json', 'utf8'))
 
 
 /*GET homepage*/
