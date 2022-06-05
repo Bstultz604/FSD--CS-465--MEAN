@@ -4,13 +4,13 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const hbs = require('hbs');
-require('./app_server/database/db');
+require('./app_api/database/db');
 
 const indexRouter = require('./app_server/routes/index');
-const usersRouter = require('./app_server/routes/users');
 const travelRouter = require('./app_server/routes/travel');
 const roomRouter = require('./app_server/routes/room_route');
-const { travel } = require('./app_server/controllers/travel');
+
+const apiRouter = require('./app_api/routes/api_index');
 
 const app = express();
 
@@ -28,8 +28,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/api', apiRouter);
+
 app.use('/index', indexRouter);
-app.use('/users', usersRouter);
 app.use('/travel', travelRouter); 
 app.use('/rooms', roomRouter);
 
