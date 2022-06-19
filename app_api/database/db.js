@@ -79,3 +79,4 @@ connect();
 
 //bring in the mongoose schema
 require('./models/trip_schema');
+require('./models/user_schema');

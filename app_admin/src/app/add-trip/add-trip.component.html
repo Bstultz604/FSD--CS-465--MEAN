@@ -4,8 +4,7 @@
 
     <div class="form-group">
       <label>Code:</label>
-      <input type="text" formControlName="code"
-             placeholder="Code" class="form-control"
+      <input type="text" formControlName="code" placeholder="Code" class="form-control"
              [ngClass]="{ 'is-invalid': submitted && f.code.errors }">
       <div *ngIf="submitted && f.code.errors">
         <div *ngIf="f.code.errors.required">
@@ -27,80 +26,78 @@
     </div>
 
     <div class="form-group">
-      <label>Length</label>
+      <label>Length:</label>
       <input type="text" formControlName="length"
              placeholder="Length" class="form-control"
-             [ngClass]="{ 'is-invalid': submitted && f.length.errors}" />
+             [ngClass]="{ 'is-invalid': submitted && f.length.errors }">
       <div *ngIf="submitted && f.length.errors">
         <div *ngIf="f.length.errors.required">
-          length is required
+          Length is required
         </div>
       </div>
     </div>
 
     <div class="form-group">
-      <label>Start</label>
-      <input type="date" formControlName="start"
-             placeholder="start" class="form-control"
-             [ngClass]="{ 'is-invalid': submitted && f.start.errors}" />
+      <label>Start Date:</label>
+      <input type="text" formControlName="start"
+             placeholder="Start" class="form-control"
+             [ngClass]="{ 'is-invalid': submitted && f.start.errors }">
       <div *ngIf="submitted && f.start.errors">
         <div *ngIf="f.start.errors.required">
-          start is required
+          Start Date is required
         </div>
       </div>
     </div>
 
     <div class="form-group">
-      <label>Resort</label>
+      <label>Resort:</label>
       <input type="text" formControlName="resort"
-             placeholder="resort" class="form-control"
-             [ngClass]="{ 'is-invalid': submitted && f.resort.errors}" />
+             placeholder="Resort" class="form-control"
+             [ngClass]="{ 'is-invalid': submitted && f.resort.errors }">
       <div *ngIf="submitted && f.resort.errors">
         <div *ngIf="f.resort.errors.required">
-          resort required
+          Resort is required
         </div>
       </div>
     </div>
 
     <div class="form-group">
-      <label>PerPerson</label>
+      <label>Per Person:</label>
       <input type="text" formControlName="perPerson"
-             placeholder="perPerson" class="form-control"
-             [ngClass]="{ 'is-invalid': submitted && f.perPerson.errors}" />
+             placeholder="PerPerson" class="form-control"
+             [ngClass]="{ 'is-invalid': submitted && f.perPerson.errors }">
       <div *ngIf="submitted && f.perPerson.errors">
         <div *ngIf="f.perPerson.errors.required">
-          perPerson is required
+          Per Person Amount is required
         </div>
       </div>
     </div>
 
     <div class="form-group">
-      <label>Image</label>
+      <label>Image:</label>
       <input type="text" formControlName="image"
-             placeholder="image" class="form-control"
-             [ngClass]="{ 'is-invalid': submitted && f.image.errors}" />
+             placeholder="Image" class="form-control"
+             [ngClass]="{ 'is-invalid': submitted && f.image.errors }">
       <div *ngIf="submitted && f.image.errors">
         <div *ngIf="f.image.errors.required">
-          image is required
+          Image is required
         </div>
       </div>
     </div>
 
     <div class="form-group">
-      <label>Description</label>
+      <label>Description:</label>
       <input type="text" formControlName="description"
-             placeholder="description" class="form-control"
-             [ngClass]="{ 'is-invalid': submitted && f.description.errors}" />
+             placeholder="Description" class="form-control"
+             [ngClass]="{ 'is-invalid': submitted && f.description.errors }">
       <div *ngIf="submitted && f.description.errors">
         <div *ngIf="f.description.errors.required">
-          description is required
+          Description is required
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <router-outlet></router-outlet>
-    </div>
     <button type="submit" class="btn btn-info">Save</button>
+
   </form>
 </div>

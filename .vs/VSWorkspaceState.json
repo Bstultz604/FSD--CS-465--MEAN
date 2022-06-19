@@ -1,12 +1,12 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\app_server",
-    "\\app_server\\controllers",
-    "\\app_server\\routes",
-    "\\app_server\\views",
-    "\\app_server\\views\\partials"
+    "\\app_admin",
+    "\\app_admin\\src",
+    "\\app_admin\\src\\app",
+    "\\app_admin\\src\\app\\add-trip",
+    "\\app_admin\\src\\app\\login",
+    "\\app_admin\\src\\app\\trip-listing",
+    "\\app_api\\database\\models"
   ],
-  "SelectedNode": "\\app_server\\views\\partials\\header.hbs",
   "PreviewInSolutionExplorer": false
 }

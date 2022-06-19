@@ -7,34 +7,32 @@
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
+    "crypto": "^1.0.1",
     "debug": "~2.6.9",
+    "dotenv": "^16.0.0",
     "express": "~4.16.1",
-    "hbs": "~4.0.4",
+    "express-jwt": "^6.1.0",
+    "hbs": "^4.2.0",
     "http-errors": "~1.6.3",
-    "mongoose": "^5.9.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "~5.9.2",
     "morgan": "~1.9.1",
     "nodemon": "^2.0.15",
-    "readline": "^1.3.0",
-    "seedgoose": "^2.0.2"
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "request": "^2.88.2"
   },
-
   "devDependencies": {
-
     "hbs": "^4.2.0",
-
     "seedgoose": "^2.0.2"
-
   },
-
   "seedgoose": {
-    "modelBaseDirectory": "app_api/database/models", 
-
-    "models": [ "*.js", "!db.js" ], 
-
-    "data": "data", 
-
+    "modelBaseDirectory": "app_api/database/models",
+    "models": [
+      "*.js",
+      "!db.js"
+    ],
+    "data": "data",
     "db": "mongodb://localhost:27017/travlr"
   }
 }
-
-
